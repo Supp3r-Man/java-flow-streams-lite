@@ -195,7 +195,7 @@ Notes on the results:
 - `timeout` is per-item (idle time while demand is outstanding), with no overall deadline and no fallback publisher.
 - No hot sources, subjects, `observeOn`/`subscribeOn` split, fusion, context, tracing, `zip`, `window`, `retry`, `groupBy`.
 - Performance was not measured at all. Several operators allocate per signal (`timeout` allocates a task per signal).
-- Only JDK 17 on Windows was run locally. The CI workflow is included and cI ran green on the first run on GitHub Actions (Java 17 and 21, ubuntu-latest, 2026-10-20).
+- Only JDK 17 on Windows was run locally. The CI workflow is included, and it ran green on the first run on GitHub Actions (Java 17 and 21, ubuntu-latest, 2026-10-20).
 
 ## Layout
 
